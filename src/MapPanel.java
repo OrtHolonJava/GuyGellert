@@ -57,6 +57,7 @@ public class MapPanel extends JPanel {
 				{
 					_water.setImgCords((j * _size), (i) * _size);
 					_water.drawImg(g);
+					System.out.println("lol");
 				}
 			}
 		}
