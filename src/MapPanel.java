@@ -14,6 +14,8 @@ public class MapPanel extends JPanel {
 	private Img _floor;
 	private  Img _rock;
 	private  Img _water;
+	private Img _pyramid;
+	private Img _sphinx;
 	private Map _map;
 	public MapPanel()
 	{
@@ -26,7 +28,10 @@ public class MapPanel extends JPanel {
 		_floor = new Img("images\\SandFloor.jpg", 0, 0, 50, 50);
 		_rock = new Img("images\\Rock.jpg", 0, 0, 50, 50);
 		_water = new Img("images\\water.jpg", 0, 0, 50, 50);
+		_pyramid = new Img("images\\pyramid.jpg", 0, 0, 200, 200);
+		_sphinx = new Img("images\\sphinx.jpg", 0, 0, 200, 200);
 		_map = new Map(_line, _cols, "map\\file1.xml");
+		
 		_map.get_map();
 	}
 	
@@ -57,7 +62,16 @@ public class MapPanel extends JPanel {
 				{
 					_water.setImgCords((j * _size), (i) * _size);
 					_water.drawImg(g);
-					System.out.println("lol");
+				}
+				else if(_map.get_map()[i][j]  == 5)
+				{
+					_pyramid.setImgCords((j * _size), (i) * _size);
+					_pyramid.drawImg(g);
+				}
+				else if(_map.get_map()[i][j]  == 6)
+				{
+					_sphinx.setImgCords((j * _size), (i) * _size);
+					_sphinx.drawImg(g);
 				}
 			}
 		}
