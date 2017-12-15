@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 import images.Img;
-public class MapPanel extends JPanel {
+public class MapSnowPanel extends JPanel {
 
 	private int _line;
 	private int _cols;
@@ -20,23 +20,26 @@ public class MapPanel extends JPanel {
 	private Img _torch;
 	private Img _statu;
 	private Map _map;
-	public MapPanel()
+	public MapSnowPanel()
 	{
 		super();
 		_line =15;
 		_cols =37;
 		_size = 50;
-		_imgBackground = new Img("images\\Desert\\Sand.jpg", 0, 0, 1700, 1700);
-		_blockImg = new Img("images\\Desert\\tree.png", 0, 0, 100,100 );
-		_floor = new Img("images\\Desert\\SandFloor.jpg", 0, 0, 50, 50);
-		_rock = new Img("images\\Desert\\rock.png", 0, 0, 150, 150);
-		_water = new Img("images\\Desert\\water.jpg", 0, 0, 50, 50);
-		_pyramid = new Img("images\\Desert\\pyramid.png", 0, 0, 300, 300);
-		_sphinx = new Img("images\\Desert\\sphinx.png", 0, 0, 200, 200);
-		_gate = new Img("images\\Desert\\gate.png", 0, 0, 100, 100);
-		_torch = new Img("images\\Desert\\torch.png", 0, 0, 200, 200);
-		_statu = new Img("images\\Desert\\statu.png", 0, 0, 100, 100);
-		_map = new Map(_line, _cols, "map\\Desert\\file2.xml");
+		_imgBackground = new Img("images\\Snow\\Snow.png", 0, 0, 1700, 1700);
+		/**
+		_blockImg = new Img("images\\Snow\\tree.png", 0, 0, 100,100 );
+		_floor = new Img("images\\Snow\\SandFloor.jpg", 0, 0, 50, 50);
+		_rock = new Img("images\\Snow\\rock.png", 0, 0, 150, 150);
+		_water = new Img("images\\Snow\\water.jpg", 0, 0, 50, 50);
+		_pyramid = new Img("images\\Snow\\pyramid.png", 0, 0, 300, 300);
+		_sphinx = new Img("images\\Snow\\sphinx.png", 0, 0, 200, 200);
+		_gate = new Img("images\\Snow\\gate.png", 0, 0, 100, 100);
+		_torch = new Img("images\\Snow\\torch.png", 0, 0, 200, 200);
+		_statu = new Img("images\\Snow\\statu.png", 0, 0, 100, 100);
+		**/
+		_map = new Map(_line, _cols, "map\\Snow\\file1.xml");
+		
 		
 		_map.get_map();
 	}
