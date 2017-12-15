@@ -16,6 +16,9 @@ public class MapPanel extends JPanel {
 	private  Img _water;
 	private Img _pyramid;
 	private Img _sphinx;
+	private Img _gate;
+	private Img _torch;
+	private Img _statu;
 	private Map _map;
 	public MapPanel()
 	{
@@ -23,14 +26,17 @@ public class MapPanel extends JPanel {
 		_line =15;
 		_cols =37;
 		_size = 50;
-		_imgBackground = new Img("images\\Sand.jpg", 0, 0, 1500, 1500);
-		_blockImg = new Img("images\\tree.png", 0, 0, 50,50 );
-		_floor = new Img("images\\SandFloor.jpg", 0, 0, 50, 50);
-		_rock = new Img("images\\Rock.jpg", 0, 0, 50, 50);
-		_water = new Img("images\\water.jpg", 0, 0, 50, 50);
-		_pyramid = new Img("images\\pyramid.jpg", 0, 0, 200, 200);
-		_sphinx = new Img("images\\sphinx.jpg", 0, 0, 200, 200);
-		_map = new Map(_line, _cols, "map\\file1.xml");
+		_imgBackground = new Img("images\\Desert\\Sand.jpg", 0, 0, 1700, 1700);
+		_blockImg = new Img("images\\Desert\\tree.png", 0, 0, 100,100 );
+		_floor = new Img("images\\Desert\\SandFloor.jpg", 0, 0, 50, 50);
+		_rock = new Img("images\\Desert\\rock.png", 0, 0, 150, 150);
+		_water = new Img("images\\Desert\\water.jpg", 0, 0, 50, 50);
+		_pyramid = new Img("images\\Desert\\pyramid.png", 0, 0, 300, 300);
+		_sphinx = new Img("images\\Desert\\sphinx.png", 0, 0, 200, 200);
+		_gate = new Img("images\\Desert\\gate.png", 0, 0, 100, 100);
+		_torch = new Img("images\\Desert\\torch.png", 0, 0, 200, 200);
+		_statu = new Img("images\\Desert\\statu.png", 0, 0, 100, 100);
+		_map = new Map(_line, _cols, "map\\Desert\\file1.xml");
 		
 		_map.get_map();
 	}
@@ -72,6 +78,21 @@ public class MapPanel extends JPanel {
 				{
 					_sphinx.setImgCords((j * _size), (i) * _size);
 					_sphinx.drawImg(g);
+				}
+				else if(_map.get_map()[i][j]  == 7)
+				{
+					_gate.setImgCords((j * _size), (i) * _size);
+					_gate.drawImg(g);
+				}
+				else if(_map.get_map()[i][j]  == 8)
+				{
+					_torch.setImgCords((j * _size), (i) * _size);
+					_torch.drawImg(g);
+				}
+				else if(_map.get_map()[i][j]  == 9)
+				{
+					_statu.setImgCords((j * _size), (i) * _size);
+					_statu.drawImg(g);
 				}
 			}
 		}

@@ -9,7 +9,7 @@ public class MapFrame extends JFrame {
 		_mp = new MapPanel();
 		add(_mp);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(800, 700);
+		setSize(900, 700);
 		setVisible(true);
 	}
 	
