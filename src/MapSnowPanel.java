@@ -26,10 +26,12 @@ public class MapSnowPanel extends JPanel {
 		_line =15;
 		_cols =37;
 		_size = 50;
-		_imgBackground = new Img("images\\Snow\\Snow.png", 0, 0, 1700, 1700);
-		/**
+		_imgBackground = new Img("images\\Snow\\Snow.png", 0, 0, 1700, 750);
+		_floor = new Img("images\\Snow\\IceFloor.jpg", 0, 0, 50, 50);
+		
+		
 		_blockImg = new Img("images\\Snow\\tree.png", 0, 0, 100,100 );
-		_floor = new Img("images\\Snow\\SandFloor.jpg", 0, 0, 50, 50);
+		/**
 		_rock = new Img("images\\Snow\\rock.png", 0, 0, 150, 150);
 		_water = new Img("images\\Snow\\water.jpg", 0, 0, 50, 50);
 		_pyramid = new Img("images\\Snow\\pyramid.png", 0, 0, 300, 300);
