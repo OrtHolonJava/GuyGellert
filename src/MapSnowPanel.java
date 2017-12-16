@@ -12,7 +12,7 @@ public class MapSnowPanel extends JPanel {
 	private Img _imgBackground;
 	private Img _blockImg;
 	private Img _floor;
-	private  Img _rock;
+	private  Img _snowman;
 	private  Img _water;
 	private Img _pyramid;
 	private Img _sphinx;
@@ -31,8 +31,9 @@ public class MapSnowPanel extends JPanel {
 		
 		
 		_blockImg = new Img("images\\Snow\\tree.png", 0, 0, 100,100 );
+		
+		_snowman = new Img("images\\Snow\\Snowman.png", 0, 0, 50, 50);
 		/**
-		_rock = new Img("images\\Snow\\rock.png", 0, 0, 150, 150);
 		_water = new Img("images\\Snow\\water.jpg", 0, 0, 50, 50);
 		_pyramid = new Img("images\\Snow\\pyramid.png", 0, 0, 300, 300);
 		_sphinx = new Img("images\\Snow\\sphinx.png", 0, 0, 200, 200);
@@ -66,8 +67,8 @@ public class MapSnowPanel extends JPanel {
 				}
 				else if(_map.get_map()[i][j]  == 3)
 				{
-					_rock.setImgCords((j * _size), (i) * _size);
-					_rock.drawImg(g);
+					_snowman.setImgCords((j * _size), (i) * _size);
+					_snowman.drawImg(g);
 				}
 				else if(_map.get_map()[i][j]  == 4)
 				{
