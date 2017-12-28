@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 import images.Img;
-public class MapCityPanel extends JPanel {
+public class MapJunglePanel extends JPanel {
 
 	private int _line;
 	private int _cols;
@@ -21,20 +21,23 @@ public class MapCityPanel extends JPanel {
 	private Img _torch;
 	private Img _statu;
 	private Map _map;
-	public MapCityPanel()
+	public MapJunglePanel()
 	{
 		super();
 		_line =15;
 		_cols =37;
 		_size = 50;
 		
-		_imgBackground = new Img("images\\City\\CityBackground.jpg", 0, 0, 1000, 330);
-		_background2 = new Img("images\\City\\grey.jpg", 0, 315, 1000, 350);
-		
-		_floor = new Img("images\\City\\railroad.png", 0, 0, 100, 100);
-		
+		_imgBackground = new Img("images\\Jungle\\JungleBackground.jpg", 0, 0, 1700, 900);
+		_floor = new Img("images\\Jungle\\grassfloor.jpg", 0, 0, 50, 50);
+		_blockImg = new Img("images\\Jungle\\Tree.png", 0, 0, 100,100 );
 		/**
-		_blockImg = new Img("images\\Moutains\\tree.png", 0, 0, 100,100 );
+		_background2 = new Img("images\\Jungle\\grey.jpg", 0, 315, 1000, 350);
+		
+		
+		
+		
+		
 		
 		_snowman = new Img("images\\Moutains\\Snowman.png", 0, 0, 50, 50);
 		
@@ -45,7 +48,7 @@ public class MapCityPanel extends JPanel {
 		_torch = new Img("images\\Moutains\\torch.png", 0, 0, 200, 200);
 		_statu = new Img("images\\Moutains\\statu.png", 0, 0, 100, 100);
 		**/
-		_map = new Map(_line, _cols, "map\\City\\file1.xml");
+		_map = new Map(_line, _cols, "map\\Jungle\\file1.xml");
 		
 		
 		_map.get_map();
@@ -55,7 +58,7 @@ public class MapCityPanel extends JPanel {
 	{
 		super.paintComponent(g);
 		_imgBackground.drawImg(g);
-		_background2.drawImg(g);
+		//_background2.drawImg(g);
 		for (int i=0; i< _line; i++)
 		{
 			for(int j=0; j<_cols; j++)
