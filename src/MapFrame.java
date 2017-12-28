@@ -7,6 +7,7 @@ public class MapFrame extends JFrame {
 	private MapMoutainsPanel _mmp;
 	private MapCityPanel _mcp;
 	private MapJunglePanel _mjp;
+	private MapSavanaPanel _msap;
 	public MapFrame()
 	{
 		super();
@@ -16,11 +17,13 @@ public class MapFrame extends JFrame {
 		_mmp = new MapMoutainsPanel();
 		_mcp = new MapCityPanel();
 		_mjp = new MapJunglePanel();
+		_msap = new MapSavanaPanel();
 		//add(_mp);
 		//add(_msp);
 		//add(_mmp);
 		//add(_mcp);
-		add(_mjp);
+		//add(_mjp);
+		add(_msap);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(900, 700);
 		setVisible(true);
