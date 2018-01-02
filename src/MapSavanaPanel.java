@@ -30,8 +30,9 @@ public class MapSavanaPanel extends JPanel {
 		
 		_imgBackground = new Img("images\\Savahana\\SavanaBackground.jpg", 0, 0, 1700, 400);
 		_background2 = new Img("images\\Savahana\\BrownBackground.jpg", 0, 400, 1700, 350);
+		_floor = new Img("images\\Savahana\\Floor.jpg", 0, 0, 50, 50);
 		/**
-		_floor = new Img("images\\Savahana\\grassfloor.jpg", 0, 0, 50, 50);
+		
 		_blockImg = new Img("images\\Savahana\\Tree.png", 0, 0, 100,100 );
 		
 	
