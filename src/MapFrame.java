@@ -35,6 +35,7 @@ public class MapFrame extends JFrame {
 		setVisible(true);
 	}
 	public void showLoader(){
+		System.out.println("guu");
 		JFrame frameLoader = new JFrame();
         URL url = this.getClass().getResource("images\\Moutains\\BackgroundMoutains.gif");
         Icon icon = new ImageIcon(url);
