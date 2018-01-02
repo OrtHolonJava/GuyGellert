@@ -322,23 +322,23 @@
 </Line>
 <!-- ***************9*****************-->
 <Line>
+<Area value="1"/>
 <Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
+<Area value="1"/>
 <Area value="0"/> <!-- *****10***** -->
+<Area value="1"/>
 <Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/> <!-- *****20***** -->
@@ -362,23 +362,23 @@
 </Line>
 <!-- ***************10*****************-->
 <Line>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/> <!-- *****10***** -->
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
-<Area value="2"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/> <!-- *****10***** -->
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
+<Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/> <!-- *****20***** -->
@@ -402,25 +402,25 @@
 </Line>
 <!-- ***************11*****************-->
 <Line>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/> <!-- *****10***** -->
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
-<Area value="0"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/> <!-- *****10***** -->
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
+<Area value="2"/>
 <Area value="0"/> <!-- *****20***** -->
 <Area value="0"/>
 <Area value="0"/>
