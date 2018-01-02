@@ -28,12 +28,13 @@ public class MapSavanaPanel extends JPanel {
 		_cols =37;
 		_size = 50;
 		
-		_imgBackground = new Img("images\\Savahana\\SavanaBackground.jpg", 0, 0, 1700, 750);
+		_imgBackground = new Img("images\\Savahana\\SavanaBackground.jpg", 0, 0, 1700, 400);
+		_background2 = new Img("images\\Savahana\\BrownBackground.jpg", 0, 400, 1700, 350);
 		/**
 		_floor = new Img("images\\Savahana\\grassfloor.jpg", 0, 0, 50, 50);
 		_blockImg = new Img("images\\Savahana\\Tree.png", 0, 0, 100,100 );
 		
-		_background2 = new Img("images\\Jungle\\grey.jpg", 0, 315, 1000, 350);
+	
 		
 		
 		
@@ -59,7 +60,7 @@ public class MapSavanaPanel extends JPanel {
 	{
 		super.paintComponent(g);
 		_imgBackground.drawImg(g);
-		//_background2.drawImg(g);
+		_background2.drawImg(g);
 		for (int i=0; i< _line; i++)
 		{
 			for(int j=0; j<_cols; j++)
