@@ -26,7 +26,7 @@ public class MapFrame extends JFrame {
 		
 		//add(_mp);
 		//add(_msp);
-		add(_mmp);
+		//add(_mmp);
 		//add(_mcp);
 		//add(_mjp);
 		//add(_msap);
@@ -35,17 +35,15 @@ public class MapFrame extends JFrame {
 		setVisible(true);
 	}
 	public void showLoader(){
-		System.out.println("guu");
-		JFrame frameLoader = new JFrame();
         URL url = this.getClass().getResource("images\\Moutains\\BackgroundMoutains.gif");
         Icon icon = new ImageIcon(url);
         JLabel label = new JLabel(icon);
-        frameLoader.setUndecorated(true);
-        frameLoader.getContentPane().add(label);
-        frameLoader.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frameLoader.pack();
-        frameLoader.setLocationRelativeTo(null);
-        frameLoader.setVisible(true);
+        //super.setUndecorated(true);
+        super.getContentPane().add(label);
+        super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        super.pack();
+        super.setLocationRelativeTo(null);
+        super.setVisible(true);
     }
 	
 }
