@@ -16,34 +16,34 @@ public class MapFrame extends JFrame {
 	public MapFrame()
 	{
 		super();
-		
+
 		_mp = new MapPanel();
 		_msp = new MapSnowPanel();
 		_mmp = new MapMoutainsPanel();
 		_mcp = new MapCityPanel();
 		_mjp = new MapJunglePanel();
 		_msap = new MapSavanaPanel();
-		
+
 		//add(_mp);
 		//add(_msp);
 		//add(_mmp);
 		//add(_mcp);
-		//add(_mjp);
+		add(_mjp);
 		//add(_msap);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(900, 700);
 		setVisible(true);
 	}
 	public void showLoader(){
-        URL url = this.getClass().getResource("images\\Moutains\\BackgroundMoutains.gif");
-        Icon icon = new ImageIcon(url);
-        JLabel label = new JLabel(icon);
-        //super.setUndecorated(true);
-        super.getContentPane().add(label);
-        super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        super.pack();
-        super.setLocationRelativeTo(null);
-        super.setVisible(true);
-    }
-	
+		URL url = this.getClass().getResource("images\\Moutains\\BackgroundMoutains.gif");
+		Icon icon = new ImageIcon(url);
+		JLabel label = new JLabel(icon);
+		//super.setUndecorated(true);
+		super.getContentPane().add(label);
+		super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		super.pack();
+		super.setLocationRelativeTo(null);
+		super.setVisible(true);
+	}
+
 }

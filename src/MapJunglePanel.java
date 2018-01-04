@@ -1,6 +1,16 @@
 
 import java.awt.Graphics;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JPanel;
 
 import images.Img;
@@ -27,33 +37,56 @@ public class MapJunglePanel extends JPanel {
 		_line =15;
 		_cols =37;
 		_size = 50;
-		
+
 		_imgBackground = new Img("images\\Jungle\\JungleBackground.jpg", 0, 0, 1700, 900);
 		_floor = new Img("images\\Jungle\\grassfloor.jpg", 0, 0, 50, 50);
 		_blockImg = new Img("images\\Jungle\\Tree.png", 0, 0, 100,100 );
+
+		try {
+			try {
+				AudioInputStream aip = AudioSystem.getAudioInputStream( new File("JungleArea.wav"));
+			
+			Clip clip = AudioSystem.getClip();
+			clip.open(aip);
+			clip.start();
+		} catch (LineUnavailableException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		} catch (UnsupportedAudioFileException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+
+
 		/**
 		_background2 = new Img("images\\Jungle\\grey.jpg", 0, 315, 1000, 350);
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 		_snowman = new Img("images\\Moutains\\Snowman.png", 0, 0, 50, 50);
-		
+
 		_water = new Img("images\\Moutains\\water.jpg", 0, 0, 50, 50);
 		_pyramid = new Img("images\\Moutains\\pyramid.png", 0, 0, 300, 300);
 		_sphinx = new Img("images\\Moutains\\sphinx.png", 0, 0, 200, 200);
 		_gate = new Img("images\\Moutains\\gate.png", 0, 0, 100, 100);
 		_torch = new Img("images\\Moutains\\torch.png", 0, 0, 200, 200);
 		_statu = new Img("images\\Moutains\\statu.png", 0, 0, 100, 100);
-		**/
+		 **/
 		_map = new Map(_line, _cols, "map\\Jungle\\file1.xml");
-		
-		
+
+
 		_map.get_map();
 	}
-	
+
 	public void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
@@ -111,6 +144,6 @@ public class MapJunglePanel extends JPanel {
 			}
 		}
 	}
-	
-	
+
+
 }
