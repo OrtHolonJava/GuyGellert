@@ -49,6 +49,7 @@ public class MapJunglePanel extends JPanel {
 			Clip clip = AudioSystem.getClip();
 			clip.open(aip);
 			clip.start();
+			clip.loop(5);
 		} catch (LineUnavailableException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
