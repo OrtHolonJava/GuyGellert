@@ -45,15 +45,15 @@ public class MapJunglePanel extends JPanel {
 		try {
 			try {
 				AudioInputStream aip = AudioSystem.getAudioInputStream( new File("JungleArea.wav"));
-			
-			Clip clip = AudioSystem.getClip();
-			clip.open(aip);
-			clip.start();
-			clip.loop(5);
-		} catch (LineUnavailableException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
+				Clip clip = AudioSystem.getClip();
+				clip.open(aip);
+				clip.start();
+				clip.loop(5);
+			} catch (LineUnavailableException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} catch (UnsupportedAudioFileException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
