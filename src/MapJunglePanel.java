@@ -44,7 +44,7 @@ public class MapJunglePanel extends JPanel {
 
 		try {
 			try {
-				AudioInputStream aip = AudioSystem.getAudioInputStream( new File("JungleArea.wav"));
+				AudioInputStream aip = AudioSystem.getAudioInputStream( new File("Music//JungleArea.wav"));
 
 				Clip clip = AudioSystem.getClip();
 				clip.open(aip);
