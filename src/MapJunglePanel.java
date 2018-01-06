@@ -50,6 +50,7 @@ public class MapJunglePanel extends JPanel {
 				clip.open(aip);
 				clip.start();
 				clip.loop(5);
+				clip.stop();
 			} catch (LineUnavailableException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

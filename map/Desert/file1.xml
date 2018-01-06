@@ -141,7 +141,7 @@
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
-<Area value="0"/> <!-- *****20***** -->
+<Area value="7"/> <!-- *****20***** -->
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
@@ -162,7 +162,7 @@
 </Line>
 <!-- ***************5*****************-->
 <Line>
-<Area value="0"/>
+<Area value="9"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
@@ -175,7 +175,7 @@
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
-<Area value="8"/>
+<Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
@@ -203,14 +203,14 @@
 <!-- ***************6*****************-->
 <Line>
 <Area value="0"/>
-<Area value="5"/>
+<Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="2"/>
-<Area value="9"/>
+<Area value="0"/>
 <Area value="0"/> <!-- *****10***** -->
 <Area value="0"/>
 <Area value="0"/>
@@ -251,10 +251,10 @@
 <Area value="0"/>
 <Area value="2"/>
 <Area value="0"/>
-<Area value="0"/> <!-- *****10***** -->
+<Area value="1"/> <!-- *****10***** -->
 <Area value="0"/>
 <Area value="0"/>
-<Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
@@ -371,11 +371,11 @@
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>
-<Area value="0"/> <!-- *****10***** -->
+<Area value="1"/> <!-- *****10***** -->
 <Area value="0"/>
 <Area value="0"/>
+<Area value="1"/>
 <Area value="0"/>
-<Area value="8"/>
 <Area value="0"/>
 <Area value="0"/>
 <Area value="0"/>

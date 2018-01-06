@@ -31,12 +31,12 @@ public class MapPanel extends JPanel {
 		_floor = new Img("images\\Desert\\SandFloor.jpg", 0, 0, 50, 50);
 		_rock = new Img("images\\Desert\\rock.png", 0, 0, 150, 150);
 		_water = new Img("images\\Desert\\water.jpg", 0, 0, 50, 50);
-		_pyramid = new Img("images\\Desert\\pyramid.png", 0, 0, 300, 300);
+		_pyramid = new Img("images\\Desert\\pyramid2.png", 0, 0, 300, 300);
 		_sphinx = new Img("images\\Desert\\sphinx.png", 0, 0, 200, 200);
-		_gate = new Img("images\\Desert\\gate.png", 0, 0, 100, 100);
+		_gate = new Img("images\\Desert\\gate.png", 0, 0, 500, 500);
 		_torch = new Img("images\\Desert\\torch.png", 0, 0, 200, 200);
-		_statu = new Img("images\\Desert\\statu.png", 0, 0, 100, 100);
-		_map = new Map(_line, _cols, "map\\Desert\\file2.xml");
+		_statu = new Img("images\\Desert\\statu.png", 0, 0, 150, 150);
+		_map = new Map(_line, _cols, "map\\Desert\\file1.xml");
 		
 		_map.get_map();
 	}
