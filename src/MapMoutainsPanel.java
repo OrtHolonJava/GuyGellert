@@ -32,12 +32,13 @@ public class MapMoutainsPanel extends JPanel {
 		_cols =37;
 		_size = 50;
 		
-		_imgBackground = new Img("images\\Moutains\\Moutain.jpg", 0, 0, 1700, 750);
+		_imgBackground = new Img("images\\Moutains\\Grey.jpg", 0, 500, 1700, 750);
 		
-		_floor = new Img("images\\Moutains\\ladder3.png", 0, 0, 100, 100);
+		_floor = new Img("images\\Moutains\\ladder3.png", 0, 0, 50, 50);
+		_blockImg = new Img("images\\Moutains\\ladderFloor3.png", 0, 0, 50,50 );
 		/**
 		
-		_blockImg = new Img("images\\Moutains\\tree.png", 0, 0, 100,100 );
+		
 		
 		_snowman = new Img("images\\Moutains\\Snowman.png", 0, 0, 50, 50);
 		
@@ -57,10 +58,10 @@ public class MapMoutainsPanel extends JPanel {
 	public void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-		ImageIcon img = new ImageIcon(getClass().getResource("images\\Moutains\\BackgroundMoutains.gif"));
+		ImageIcon img = new ImageIcon(getClass().getResource("images\\Moutains\\Test1.gif"));
 		JLabel label = new JLabel(img);
 		img.paintIcon(super.getRootPane(), g, 0, 0);
-		//_imgBackground.drawImg(g);
+		_imgBackground.drawImg(g);
 		for (int i=0; i< _line; i++)
 		{
 			for(int j=0; j<_cols; j++)

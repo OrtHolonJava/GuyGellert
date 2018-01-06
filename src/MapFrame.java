@@ -24,9 +24,9 @@ public class MapFrame extends JFrame {
 		_mjp = new MapJunglePanel();
 		_msap = new MapSavanaPanel();
 
-		add(_mp);
+		//add(_mp);
 		//add(_msp);
-		//add(_mmp);
+		add(_mmp);
 		//add(_mcp);
 		//add(_mjp);
 		//add(_msap);
