@@ -32,10 +32,10 @@ public class MapMoutainsPanel extends JPanel {
 		_cols =37;
 		_size = 50;
 		
-		_imgBackground = new Img("images\\Moutains\\Grey.jpg", 0, 500, 1700, 750);
+		_imgBackground = new Img("images\\Moutains\\Snow.jpg", 0, 500, 1700, 750);
 		
-		_floor = new Img("images\\Moutains\\ladder3.png", 0, 0, 50, 50);
-		_blockImg = new Img("images\\Moutains\\ladderFloor3.png", 0, 0, 50,50 );
+		_floor = new Img("images\\Moutains\\Grey.jpg", 0, 0,50, 50);
+		_blockImg = new Img("images\\Moutains\\ladderFloor3.png", 0, 0, 100,100 );
 		/**
 		
 		
